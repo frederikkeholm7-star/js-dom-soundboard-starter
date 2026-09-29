@@ -16,8 +16,18 @@ getLionBtn.addEventListener("click", () => {
 
 // Skriv sammen med underviseren: gentag samme mønster for "dog"
 // 1. Hent dog-knappen ved hjælp af dens id. Variablen skal hedde getDogBtn
+const getDogBtn = document.getElementById("dog");
+
 // 2. Opret et Audio-objekt til dog-lyden ("sound/dog.wav"). Variablen skal hedde soundDog
+const soundDog = new Audio();
+soundDog.src = "sound/dog.wav";
+
 // 3. Tilføj en event listener til getDogBtn, der stopper alle lyde og afspiller soundDog
+
+getDogBtn.addEventListener("click", () => {
+  stopAllSounds();
+  soundDog.play();
+});
 
 /* =========================================================
    EKSTRAOPGAVE: elephant og monkey
