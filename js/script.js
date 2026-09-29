@@ -1,8 +1,8 @@
+"use strict";
 // Husk fra dag 1: skriv "use strict" herunder
 
-
 // Skriv selv: hent lion-knappen ved hjælp af dens id. Variablen skal hedde getLionBtn
-
+const getLionBtn = document.getElementById("lion");
 
 // Nyt i dag: new Audio() opretter et lyd-objekt. src angiver, hvilken lydfil objektet skal afspille.
 const soundLion = new Audio();
@@ -10,16 +10,14 @@ soundLion.src = "sound/lion.wav";
 
 // Eksempel: vi lytter efter klik på lion-knappen og afspiller lyden med .play()
 getLionBtn.addEventListener("click", () => {
-    stopAllSounds();
-    soundLion.play();
+  stopAllSounds();
+  soundLion.play();
 });
-
 
 // Skriv sammen med underviseren: gentag samme mønster for "dog"
 // 1. Hent dog-knappen ved hjælp af dens id. Variablen skal hedde getDogBtn
 // 2. Opret et Audio-objekt til dog-lyden ("sound/dog.wav"). Variablen skal hedde soundDog
 // 3. Tilføj en event listener til getDogBtn, der stopper alle lyde og afspiller soundDog
-
 
 /* =========================================================
    EKSTRAOPGAVE: elephant og monkey
@@ -32,29 +30,24 @@ getLionBtn.addEventListener("click", () => {
 // 2. Opret et Audio-objekt til elephant-lyden ("sound/elephant.wav"). Variablen skal hedde soundElephant
 // 3. Tilføj en event listener til getElephantBtn, der stopper alle lyde og afspiller soundElephant
 
-
 // E4. Monkey
 // Skriv selv: gør det samme for monkey.
 // 1. Hent monkey-knappen. Variablen skal hedde getMonkeyBtn
 // 2. Opret et Audio-objekt til monkey-lyden ("sound/monkey.wav"). Variablen skal hedde soundMonkey
 // 3. Tilføj en event listener til getMonkeyBtn, der stopper alle lyde og afspiller soundMonkey
 
-
-
 // Eksempel: denne funktion stopper og nulstiller lion-lyden, så den er klar til at blive afspillet igen.
 // Nyt i dag: .pause() stopper afspilningen. .currentTime = 0 spoler lyden tilbage til starten,
 // så den starter fra begyndelsen, næste gang den afspilles.
 function stopAllSounds() {
-    soundLion.pause();
-    soundLion.currentTime = 0;
+  soundLion.pause();
+  soundLion.currentTime = 0;
 
-    // Skriv selv: gør det samme for soundDog, når du har oprettet den ovenfor
+  // Skriv selv: gør det samme for soundDog, når du har oprettet den ovenfor
 
-
-    // E5. Skriv selv: gør det samme for soundElephant og soundMonkey
-    // Undersøg selv: hvad sker der, hvis du glemmer dette trin og klikker
-    // på elephant og derefter på lion?
-
+  // E5. Skriv selv: gør det samme for soundElephant og soundMonkey
+  // Undersøg selv: hvad sker der, hvis du glemmer dette trin og klikker
+  // på elephant og derefter på lion?
 }
 
 /* ---------------------------------------------------------
