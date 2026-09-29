@@ -69,6 +69,14 @@ function stopAllSounds() {
   soundLion.pause();
   soundLion.currentTime = 0;
 
+  soundDog.pause();
+  soundDog.currentTime = 0;
+
+  soundElephant.pause();
+  soundElephant.currentTime = 0;
+
+  soundMonkey.pause();
+  soundMonkey.currentTime = 0;
   // Skriv selv: gør det samme for soundDog, når du har oprettet den ovenfor
 
   // E5. Skriv selv: gør det samme for soundElephant og soundMonkey
