@@ -41,12 +41,21 @@ getElephantBtn.addEventListener("click", () => {
   stopAllSounds();
   soundElephant.play();
 });
+
 // E3. Elephant
 // Skriv selv: gentag samme mønster som for lion og dog.
 // 1. Hent elephant-knappen ved hjælp af dens id. Variablen skal hedde getElephantBtn
 // 2. Opret et Audio-objekt til elephant-lyden ("sound/elephant.wav"). Variablen skal hedde soundElephant
 // 3. Tilføj en event listener til getElephantBtn, der stopper alle lyde og afspiller soundElephant
 
+const getMonkeyBtn = document.getElementById("monkey");
+const soundMonkey = new Audio();
+soundMonkey.src = "sound/monkey.wav";
+
+getMonkeyBtn.addEventListener("click", () => {
+  stopAllSounds();
+  soundMonkey.play();
+});
 // E4. Monkey
 // Skriv selv: gør det samme for monkey.
 // 1. Hent monkey-knappen. Variablen skal hedde getMonkeyBtn
