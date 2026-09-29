@@ -39,7 +39,7 @@ soundElephant.src = "sound/elephant.wav";
 
 getElephantBtn.addEventListener("click", () => {
   stopAllSounds();
-  soundElephant();
+  soundElephant.play();
 });
 // E3. Elephant
 // Skriv selv: gentag samme mønster som for lion og dog.
