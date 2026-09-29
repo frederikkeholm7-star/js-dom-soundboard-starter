@@ -33,7 +33,14 @@ getDogBtn.addEventListener("click", () => {
    EKSTRAOPGAVE: elephant og monkey
    Lav først E1 og E2 i index.html, så knapperne er på siden.
 ========================================================= */
+const getElephantBtn = document.getElementById("elephant");
+const soundElephant = new Audio();
+soundElephant.src = "sound/elephant.wav";
 
+getElephantBtn.addEventListener("click", () => {
+  stopAllSounds();
+  soundElephant();
+});
 // E3. Elephant
 // Skriv selv: gentag samme mønster som for lion og dog.
 // 1. Hent elephant-knappen ved hjælp af dens id. Variablen skal hedde getElephantBtn
